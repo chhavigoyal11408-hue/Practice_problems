@@ -1,0 +1,36 @@
+L = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+num = int(input("enter a number from 1-12 and u will get the corresponding month: "))
+if num >= 1 and num <= 12:
+    print("month:", L[num-1])
+else:
+    print("invalid number entered.")
+
+L = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+L.remove("Jan")
+print(L)
+print(L.pop(2))
+print(L)
+del(L[0])
+print(L)
+del(L[1:])
+print(L)
+L.clear()
+print(L)
+del(L)
+
+L1 = ["Chhaya","Samiksha","Rachit"]
+L2 = [96, 99, 99]
+D = dict(zip(L1,L2))
+print(D)
+
+L1 = [10,20,30,40,50]
+L2 = [30,40,50]
+common = []
+for i in L1:
+    if i in L2:
+        common.append(i)
+print("list of common elements:", common)
+
+L = [10,10,10,20,30]
+L2 = list(set(L))
+print("list with unique elements:", L2)
