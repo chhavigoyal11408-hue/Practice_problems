@@ -1,0 +1,78 @@
+D = {1: "Pranit", 2: "Sradha"}
+D[3] = "Ishan"
+print("mew dictionary:", D)
+
+D1 = {1:"Pranit"}
+D2 = {2:"Shubh"}
+D3 = {3:"Ishan"}
+D = {}
+D.update(D1)
+D.update(D2)
+D.update(D3)
+print("new dictionary:", D)
+
+D = {1:"Pranit", 2:"Advika", 3:"Shandra", 4:"Philip"}
+x = int(input("enter key u want to search for: "))
+if x in D.keys():
+    print('present')
+else:
+    print('absent')
+
+D = {"Pranit":96, "Advika":99, "Philip":100}
+x = D.values()
+print(type(x))
+L = []
+for i in x:
+    L.append(i)
+print("sum of values:", sum(L))
+
+D = {1:"Pranit", 2:"Advika", 3:"Shandra", 4:"Philip"}
+for key in D: # js note that for i in D: print(i),,, the output will be 1,2,3,4
+    print(key)
+for value in D.values():
+    print(value)
+for key,value in D.items():
+    print(key,value)
+
+D = {}
+for i in range(1,16):
+    D[i] = i**2
+print(D)
+
+my_dict = {"Pranit":94, "Manthan":95, "Advika":96, "Philip":97, "Rachit":98}
+print(my_dict)
+my_dict["Asmita"] = 99
+print(my_dict)
+del(my_dict["Pranit"])
+print(my_dict)
+for k,v in my_dict.items():
+    print("key:",k,",","value:",v)
+
+L1 = [1, 2]
+L2 = ["Pranit", "Philip"]
+D = dict(zip(L1,L2))
+print(D)
+
+D = {"Pranit":94, "Manthan":95, "Advika":96, "Philip":97, "Rachit":98}
+L1 = list(D.keys())
+L2 = list(D.values())
+print("keys:", L1)
+print("values:", L2)
+
+D = {"Pranit":94, "Manthan":95, "Advika":96, "Philip":97, "Rachit":98}
+x = sum(D.values())
+n = len(D)
+mean = x/n
+print("mean of values:", mean)
+
+D = {"Pranit":94, "Manthan":95, "Advika":96, "Philip":97, "Rachit":98}
+x = sorted(D)
+print("original dict:", D)
+print("sorted keys list is:", x)
+
+D = {"Pranit":94, "Manthan":95, "Advika":96, "Philip":97, "Rachit":98}
+x = max(D))
+
+
+
+
